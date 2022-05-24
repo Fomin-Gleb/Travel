@@ -11,6 +11,11 @@ body {
   margin: 0 auto;
   padding: 0 50px;
 }
+@media (max-width:600px) {
+  .container{
+    padding: 0 20px;
+  }
+}
 
 .header {
   background: linear-gradient(
@@ -75,6 +80,11 @@ li {
 }
 .sub-menu li {
   margin-bottom: 30px;
+}
+@media (max-width:370px) {
+  .nav-logo{
+    margin-right: 0;
+  }
 }
 nav .nav-language a {
   font-weight: 500;
@@ -237,6 +247,7 @@ option {
   .banner-form {
     max-width: 350px;
     height: 400px;
+    padding: 20px 70px 50px 45px;
   }
   .banner-form h2 {
     font-weight: 250;
@@ -254,8 +265,8 @@ option {
     max-width: none;
   }
   .search {
-    top: 79px;
-    right: 0;
+    top: 55px;
+    right: -15px;
   }
   .banner-form button {
     width: 160px;
@@ -442,7 +453,7 @@ option {
 }
 @media (max-width: 840px) {
   .directions-content-info {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 /* information */
@@ -576,7 +587,7 @@ option {
 }
 @media (max-width: 690px) {
   .blog-content-item {
-    width: 70%;
+    width: 90%;
     margin-bottom: 30px;
     margin-right: 40px;
     margin-right: 0;
@@ -713,6 +724,7 @@ option {
   line-height: 32px;
   color: #ffffff;
   margin-bottom: 20px;
+  position: relative;
   z-index: 2;
 }
 .reviews p:nth-child(4) {
@@ -724,29 +736,34 @@ option {
 }
 .bg-img {
   position: absolute;
-  top: 245px;
-  left: 715px;
+  top: 48%;
+  left: 48%;
   text-align: center;
-  z-index: 1;
 }
 @media (max-width: 1235px) {
   .bg-img {
-    left: 535px;
+    left: 48%;
   }
 }
 @media (max-width: 1100px) {
   .bg-img {
-    left: 470px;
+    left: 48%;
   }
 }
 @media (max-width: 840px) {
   .bg-img {
-    left: 340px;
+    left: 48%;
+  }
+  .reviews .reviews-img img {
+    max-width: 20%;
   }
 }
 @media (max-width: 690px) {
   .bg-img {
-    left: 265px;
+    left: 48%;
+  }
+  .reviews .reviews-img img {
+    max-width: 30%;
   }
 }
 /* footer */
